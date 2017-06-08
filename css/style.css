@@ -1,0 +1,156 @@
+.navbar-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+}
+.header {
+  position: relative;
+}
+.header__hamburger {
+  cursor: pointer;
+}
+.header__hamburger span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  margin-bottom: 3px;
+  background-color: #000;
+}
+.header__hamburger span:last-child {
+  margin-bottom: 0;
+}
+.header__logo {
+  width: 125px;
+  height: 22px;
+  background-color: transparent;
+  background-image: url("../img/tobreak_logo.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+}
+.header__logo a {
+  display: block;
+  height: 22px;
+  text-decoration: none;
+}
+.header__nav {
+  position: absolute;
+  display: block;
+  width: 220px;
+  top: 0;
+  left: -250px;
+  background-color: #ff4;
+  transition: all 1s;
+}
+.header__nav ul {
+  padding-left: 20px;
+  padding-right: 20px;
+  list-style: none;
+}
+.header__nav li {
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dedede;
+}
+.header__nav li:last-child {
+  margin-bottom: 0;
+}
+.header__hamburger-inner {
+  width: 40px;
+  height: 20px;
+  padding-top: 15px;
+  padding-bottom: 35px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.header__hamburger-inner i {
+  margin-left: 5px;
+  color: #9b9b9b;
+}
+.header__nav--open {
+  left: 0;
+  transition: all 1s;
+}
+.main-container {
+  min-width: 320px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0;
+  padding-left: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
+  font-weight: bold;
+}
+html,
+body {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 26px;
+  overflow-x: hidden;
+  font-size: 14px;
+  font-family: "Roboto", Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: #606060;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: bold;
+}
+p,
+ul,
+li {
+  color: #777777;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: #00a3ec;
+}
+a:hover {
+  color: #0091d3;
+}
+a:active {
+  color: #07b2ff;
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+}
+* {
+  outline: solid 1px #000;
+}
