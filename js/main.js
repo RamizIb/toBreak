@@ -8,10 +8,18 @@ $(document).ready(function() {
   });
 });
 
-
 $("html").click(function(e) {
     if($(e.target).closest(".header").length == 0)
       $(".header__nav").removeClass("header__nav--open");
 });
 
+// Эффект при наведении мышки
+// $("document").ready(function() {
+//     $("div").mouseenter(function() {
+//         $("div").fadeTo("fast", "1");
+//     });
 
+//     $("div").mouseleave(function() {
+//         $("div").fadeTo("fast", "0.5");
+//     });
+// });
