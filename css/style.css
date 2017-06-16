@@ -1,3 +1,28 @@
+.content-wrapper-five {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+}
+.content-wrapper-five .half-block-left {
+  width: 45%;
+}
+.content-wrapper-five .half-block-right {
+  width: 45%;
+}
+.content-wrapper-four {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 20px;
+}
+.one-sixth-block {
+  width: 30%;
+}
 .content-wrapper-one {
   display: -ms-flexbox;
   display: flex;
@@ -26,6 +51,33 @@
 }
 .article-preview__img {
   margin-bottom: 10px;
+}
+.content-wrapper-three {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+}
+.half-block-left {
+  position: relative;
+  width: 45%;
+  margin-bottom: 20px;
+}
+.half-block-left .half-block__title {
+  position: absolute;
+  bottom: 0;
+}
+.half-block-right {
+  position: relative;
+  width: 45%;
+  margin-bottom: 20px;
+}
+.half-block-right .half-block__title {
+  position: absolute;
+  bottom: 0;
 }
 .content-wrapper-two {
   display: -ms-flexbox;
@@ -59,7 +111,34 @@
 .list-block__content .list-block__title {
   margin-bottom: 10px;
 }
+.footer__wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 20px;
+}
+.footer-subscribe {
+  margin-bottom: 20px;
+}
+.footer-menu {
+  margin-bottom: 20px;
+}
+.footer-menu .footer-menu__list {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-menu .footer-menu__list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer-menu .footer-menu__list li:last-child {
+  margin-right: 0;
+}
 .navbar-wrapper {
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -72,7 +151,14 @@
   padding-right: 20px;
 }
 .header {
-  position: relative;
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 52px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 1;
 }
 .header__hamburger {
   cursor: pointer;
@@ -214,4 +300,7 @@ a:active {
 }
 * {
   outline: solid 1px #000;
+}
+.main {
+  margin-top: 52px;
 }
