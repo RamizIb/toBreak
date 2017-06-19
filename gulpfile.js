@@ -36,6 +36,7 @@ gulp.task("serve", ["style"], function() {
   });
 
   gulp.watch("less/**/*.less", ["style"]);
+  gulp.watch("articles/*.html").on("change", server.reload);
   gulp.watch("*.html").on("change", server.reload);
 });
 
@@ -51,6 +52,8 @@ gulp.task("copy", function() {
     "js/**",
     ".htaccess",
     "robots.txt",
+    "articles/*.html",
+    "articles/finance/*.html",
     "*.html"
     ], {
       base: "."

@@ -33,7 +33,18 @@
   padding: 20px;
 }
 .content-wrapper-one .half-block {
+  position: relative;
   width: 49%;
+}
+.content-wrapper-one .half-block .half-block__title {
+  position: absolute;
+  left: 10px;
+  bottom: 25px;
+}
+.content-wrapper-one .half-block .half-block__cite {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
 }
 .content-wrapper-one .grid-block {
   display: -ms-flexbox;
@@ -68,6 +79,12 @@
 }
 .half-block-left .half-block__title {
   position: absolute;
+  left: 10px;
+  bottom: 25px;
+}
+.half-block-left .half-block__cite {
+  position: absolute;
+  left: 10px;
   bottom: 0;
 }
 .half-block-right {
@@ -77,6 +94,12 @@
 }
 .half-block-right .half-block__title {
   position: absolute;
+  left: 10px;
+  bottom: 25px;
+}
+.half-block-right .half-block__cite {
+  position: absolute;
+  left: 10px;
   bottom: 0;
 }
 .content-wrapper-two {
@@ -108,8 +131,29 @@
   width: 55%;
   overflow: hidden;
 }
-.list-block__content .list-block__title {
-  margin-bottom: 10px;
+.finance-wrapper-one {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.finance-wrapper-one .half-block-left {
+  width: 45%;
+}
+.finance-wrapper-one .half-block-left .finance-teaser {
+  margin-bottom: 20px;
+}
+.finance-wrapper-one .half-block-right {
+  width: 45%;
+}
+.finance-wrapper-one .half-block-right .finance-teaser {
+  position: relative;
+  margin-bottom: 20px;
+}
+.finance-wrapper-one .half-block-right .finance-teaser .finance-teaser__title {
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
 }
 .footer__wrapper {
   display: -ms-flexbox;
