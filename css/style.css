@@ -1,3 +1,61 @@
+.bloggers-wrapper-middle {
+  padding: 20px;
+}
+.bloggers-wrapper-middle .bloggers-top__title {
+  margin-bottom: 20px;
+}
+.bloggers-wrapper-middle .bloggers-top__block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.bloggers-wrapper-middle .bloggers-top__block .blogger-card__one {
+  width: 30%;
+  margin-bottom: 20px;
+}
+.bloggers-wrapper-middle .bloggers-top__block .blogger-card__two {
+  width: 30%;
+  margin-bottom: 20px;
+}
+.bloggers-wrapper-middle .bloggers-top__block .blogger-card__three {
+  width: 30%;
+  margin-bottom: 20px;
+}
+.bloggers-wrapper-middle .bloggers-top__block .blogger-card {
+  width: 19%;
+}
+.bloggers-wrapper-top {
+  padding: 20px;
+}
+.bloggers-wrapper-top .bloggers-top__title {
+  margin-bottom: 20px;
+}
+.bloggers-wrapper-top .bloggers-top__block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.bloggers-wrapper-top .bloggers-top__block .blogger-card__one {
+  width: 30%;
+  margin-bottom: 20px;
+}
+.bloggers-wrapper-top .bloggers-top__block .blogger-card__two {
+  width: 30%;
+  margin-bottom: 20px;
+}
+.bloggers-wrapper-top .bloggers-top__block .blogger-card__three {
+  width: 30%;
+  margin-bottom: 20px;
+}
+.bloggers-wrapper-top .bloggers-top__block .blogger-card {
+  width: 19%;
+}
 .content-wrapper-five {
   display: -ms-flexbox;
   display: flex;
@@ -134,17 +192,18 @@
 .finance-wrapper-one {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 20px;
 }
 .finance-wrapper-one .half-block-left {
-  width: 45%;
+  width: 49%;
 }
 .finance-wrapper-one .half-block-left .finance-teaser {
   margin-bottom: 20px;
 }
 .finance-wrapper-one .half-block-right {
-  width: 45%;
+  width: 49%;
 }
 .finance-wrapper-one .half-block-right .finance-teaser {
   position: relative;
@@ -235,6 +294,7 @@
   position: absolute;
   display: block;
   width: 220px;
+  padding-bottom: 20px;
   top: 0;
   left: -550px;
   background-color: #fff;
@@ -242,6 +302,7 @@
 }
 .header__nav ul {
   padding-left: 20px;
+  padding-top: 20px;
   padding-right: 20px;
   list-style: none;
 }
