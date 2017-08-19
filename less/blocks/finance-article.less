@@ -7,20 +7,20 @@
     img {
       opacity: 0.9;
     }
+  }
 
-    .finance-article__title-wrap {
-      position: absolute;
-      width: 100%;
+  .finance-article__title-wrap {
+    position: absolute;
+    width: 100%;
 
-      bottom: 25px;
+    bottom: 25px;
 
-      .finance-article__title {
-        line-height: 35px;
-        font-size: 26px;
+    .finance-article__title {
+      line-height: 35px;
+      font-size: 26px;
 
-        text-align: center;
-        color: #000;
-      }
+      text-align: center;
+      color: #000;
     }
   }
 
@@ -64,6 +64,8 @@
       span {
         display: block;
 
+        margin-bottom: 5px;
+
         font-size: 18px;
         text-align: left;
 
@@ -71,7 +73,7 @@
       }
 
       .finance-article__statistics-title {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
 
         font-size: 22px;
         font-weight: 600;
@@ -106,6 +108,48 @@
       img {
         margin: 0 auto;
       }
+    }
+  }
+}
+
+.finance-article .finance-article-wrapper .finance-article__cite--jetmoney {
+  max-width: 850px;
+  margin-top: 30px;
+
+  line-height: 32px;
+
+  span {
+
+    font-size: 22px;
+  }
+
+  .finance-article__data-source {
+    font-size: 14px;
+  }
+
+  i {
+    margin-right: 15px;
+    color: @jet-money-color;
+  }
+
+  border-bottom: 2px solid @jet-money-color;
+}
+
+.finance-article__button-jet-money {
+  max-width: 700px;
+  margin: 0 auto;
+
+  .button {
+    border-color: @jet-money-color;
+
+    background-color: @jet-money-color;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: @jet-money-color;
+
+      transition: all 0.8s ease;
     }
   }
 }
@@ -156,9 +200,21 @@
   padding: 5px;
   margin: 0 auto;
 
-  width: 700px;
+  max-width: 700px;
 
   border: 3px solid @tinkoff-color;
+  border-radius: 6px;
+}
+
+.finance-article .finance-article__title-wrap .finance-article__title--jet-money {
+  padding: 5px;
+  margin: 0 auto;
+
+  color: #fff;
+
+  max-width: 700px;
+
+  border: 3px solid @jet-money-color;
   border-radius: 6px;
 }
 
@@ -181,6 +237,10 @@
 
 .finance-article__top-img--tinkoff-card {
   background-image: linear-gradient(to bottom, transparent, @tinkoff-color);
+}
+
+.finance-article__top-img--jet-money {
+  background-image: linear-gradient(to bottom, transparent, #000000);
 }
 
 @media (min-width: 700px) {
