@@ -326,6 +326,51 @@
   margin-right: 15px;
   color: #a1469a;
 }
+.finance-article .finance-article-wrapper .finance-article__cite--mig-credit {
+  max-width: 850px;
+  margin-top: 30px;
+  line-height: 32px;
+  border-bottom: 2px solid #4caf50;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--mig-credit span {
+  font-size: 22px;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--mig-credit i:first-child {
+  margin-right: 15px;
+  color: #4caf50;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--mig-credit i:last-child {
+  margin-left: 15px;
+  color: #4caf50;
+}
+.finance-article__button-slon-finance {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.finance-article__button-slon-finance .button {
+  border-color: #44a72c;
+  background-color: #44a72c;
+  color: #fff;
+}
+.finance-article__button-slon-finance .button:hover {
+  background-color: #fff;
+  color: #44a72c;
+  transition: all 0.8s ease;
+}
+.finance-article__button-mig-credit {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.finance-article__button-mig-credit .button {
+  border-color: #4caf50;
+  background-color: #4caf50;
+  color: #fff;
+}
+.finance-article__button-mig-credit .button:hover {
+  background-color: #fff;
+  color: #4caf50;
+  transition: all 0.8s ease;
+}
 .finance-article__button-jet-money {
   max-width: 700px;
   margin: 0 auto;
@@ -372,19 +417,32 @@
   border-bottom: 2px solid #ffdd2d;
 }
 .finance-article__title--tinkoff-card {
-  padding: 5px;
+  padding: 7px;
   margin: 0 auto;
   max-width: 700px;
-  border: 3px solid #ffdd2d;
+  background-color: #ffdd2d;
   border-radius: 6px;
 }
 .finance-article .finance-article__title-wrap .finance-article__title--jet-money {
-  padding: 5px;
+  padding: 7px;
   margin: 0 auto;
   color: #fff;
   max-width: 700px;
-  border: 3px solid #a1469a;
-  border-radius: 6px;
+  background-color: #a1469a;
+}
+.finance-article .finance-article__title-wrap .finance-article__title--slon-finance {
+  padding: 7px;
+  margin: 0 auto;
+  color: #fff;
+  max-width: 700px;
+  background-color: #44a72c;
+}
+.finance-article .finance-article__title-wrap .finance-article__title--mig-credit {
+  padding: 7px;
+  margin: 0 auto;
+  color: #fff;
+  max-width: 700px;
+  background-color: #4caf50;
 }
 .finance-article__alfa-card {
   display: none;
@@ -402,6 +460,12 @@
 }
 .finance-article__top-img--jet-money {
   background-image: linear-gradient(to bottom, transparent, #000000);
+}
+.finance-article__top-img--slon-finance {
+  background-image: linear-gradient(to bottom, transparent, #44a72c);
+}
+.finance-article__top-img--mig-credit {
+  background-image: linear-gradient(to bottom, transparent, #4caf50);
 }
 @media (min-width: 700px) {
   .finance-article__alfa-card {
@@ -570,10 +634,10 @@
   margin-bottom: 0;
 }
 .header__logo {
-  width: 125px;
+  width: 200px;
   height: 22px;
   background-color: transparent;
-  background-image: url("../img/tobreak_logo.svg");
+  background-image: url("../img/money-office-logo.png");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: cover;

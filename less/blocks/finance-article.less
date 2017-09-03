@@ -135,6 +135,68 @@
   border-bottom: 2px solid @jet-money-color;
 }
 
+.finance-article .finance-article-wrapper .finance-article__cite--mig-credit {
+  max-width: 850px;
+  margin-top: 30px;
+
+  line-height: 32px;
+
+  span {
+
+    font-size: 22px;
+  }
+
+  i:first-child {
+    margin-right: 15px;
+    color: #4caf50;
+  }
+
+  i:last-child {
+    margin-left: 15px;
+    color: #4caf50;
+  }
+
+  border-bottom: 2px solid #4caf50;
+}
+
+.finance-article__button-slon-finance {
+  max-width: 700px;
+  margin: 0 auto;
+
+  .button {
+    border-color: #44a72c;
+
+    background-color: #44a72c;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #44a72c;
+
+      transition: all 0.8s ease;
+    }
+  }
+}
+
+.finance-article__button-mig-credit {
+  max-width: 700px;
+  margin: 0 auto;
+
+  .button {
+    border-color: #4caf50;
+
+    background-color: #4caf50;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #4caf50;
+
+      transition: all 0.8s ease;
+    }
+  }
+}
+
 .finance-article__button-jet-money {
   max-width: 700px;
   margin: 0 auto;
@@ -197,25 +259,43 @@
 }
 
 .finance-article__title--tinkoff-card {
-  padding: 5px;
+  padding: 7px;
   margin: 0 auto;
 
   max-width: 700px;
 
-  border: 3px solid @tinkoff-color;
+  background-color: @tinkoff-color;
   border-radius: 6px;
 }
 
 .finance-article .finance-article__title-wrap .finance-article__title--jet-money {
-  padding: 5px;
+  padding: 7px;
   margin: 0 auto;
 
   color: #fff;
 
   max-width: 700px;
+  background-color: @jet-money-color;
+}
 
-  border: 3px solid @jet-money-color;
-  border-radius: 6px;
+.finance-article .finance-article__title-wrap .finance-article__title--slon-finance {
+  padding: 7px;
+  margin: 0 auto;
+
+  color: #fff;
+
+  max-width: 700px;
+  background-color: #44a72c;
+}
+
+.finance-article .finance-article__title-wrap .finance-article__title--mig-credit {
+  padding: 7px;
+  margin: 0 auto;
+
+  color: #fff;
+
+  max-width: 700px;
+  background-color: #4caf50;
 }
 
 
@@ -241,6 +321,14 @@
 
 .finance-article__top-img--jet-money {
   background-image: linear-gradient(to bottom, transparent, #000000);
+}
+
+.finance-article__top-img--slon-finance {
+  background-image: linear-gradient(to bottom, transparent, #44a72c);
+}
+
+.finance-article__top-img--mig-credit {
+  background-image: linear-gradient(to bottom, transparent, #4caf50);
 }
 
 @media (min-width: 700px) {
