@@ -37,8 +37,6 @@ gulp.task("serve", ["style"], function() {
 
   gulp.watch("less/**/*.less", ["style"]);
   gulp.watch("articles/*.html").on("change", server.reload);
-  gulp.watch("articles/bloggers/*.html").on("change", server.reload);
-  gulp.watch("articles/finance/*.html").on("change", server.reload);
   gulp.watch("*.html").on("change", server.reload);
 });
 
@@ -48,15 +46,14 @@ gulp.task("clean", function() {
 
 gulp.task("copy", function() {
   return gulp.src([
-    "css/bootstrap.css",
-    "fonts/**/**",
-    "img/**",
+    "css/**",
+    "font/**/**",
+    "img/**/**",
     "js/**",
     ".htaccess",
     "robots.txt",
     "articles/*.html",
-    "articles/bloggers/*.html",
-    "articles/finance/*.html",
+    "articles/images/**",
     "*.html"
     ], {
       base: "."
