@@ -310,6 +310,9 @@
 .finance-article .finance-article-wrapper .finance-article__content-img img {
   margin: 0 auto;
 }
+.finance-article .finance-article-wrapper .finance-article__cite--tinkoff {
+  border-bottom: 2px solid #ffdd2d;
+}
 .finance-article .finance-article-wrapper .finance-article__cite--jetmoney {
   max-width: 850px;
   margin-top: 30px;
@@ -385,6 +388,34 @@
   color: #a1469a;
   transition: all 0.8s ease;
 }
+.finance-article__button-moneyman {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.finance-article__button-moneyman .button {
+  border-color: #a1469a;
+  background-color: #a1469a;
+  color: #fff;
+}
+.finance-article__button-moneyman .button:hover {
+  background-color: #fff;
+  color: #a1469a;
+  transition: all 0.8s ease;
+}
+.finance-article__button-kredito24 {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.finance-article__button-kredito24 .button {
+  border-color: #a1469a;
+  background-color: #a1469a;
+  color: #fff;
+}
+.finance-article__button-kredito24 .button:hover {
+  background-color: #fff;
+  color: #a1469a;
+  transition: all 0.8s ease;
+}
 .finance-article__button-alfa {
   max-width: 700px;
   margin: 0 auto;
@@ -412,9 +443,6 @@
   background-color: #fff;
   color: #333;
   transition: all 0.8s ease;
-}
-.finance-article .finance-article-wrapper .finance-article__cite--tinkoff {
-  border-bottom: 2px solid #ffdd2d;
 }
 .finance-article__title--tinkoff-card {
   padding: 7px;
@@ -465,6 +493,12 @@
   background-image: linear-gradient(to bottom, transparent, #44a72c);
 }
 .finance-article__top-img--mig-credit {
+  background-image: linear-gradient(to bottom, transparent, #4caf50);
+}
+.finance-article__top-img-moneyman {
+  background-image: linear-gradient(to bottom, transparent, #4caf50);
+}
+.finance-article__top-img-kredito24 {
   background-image: linear-gradient(to bottom, transparent, #4caf50);
 }
 @media (min-width: 700px) {
