@@ -429,6 +429,22 @@
 .finance-article .finance-article-wrapper .finance-article__cite--tinkoff {
   border-bottom: 2px solid #ffdd2d;
 }
+.finance-article .finance-article-wrapper .finance-article__cite--bm {
+  max-width: 850px;
+  margin-top: 30px;
+  line-height: 32px;
+  border-bottom: 2px solid #06327b;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--bm span {
+  font-size: 22px;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--bm .finance-article__data-source {
+  font-size: 14px;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--bm i {
+  margin-right: 15px;
+  color: #06327b;
+}
 .finance-article .finance-article-wrapper .finance-article__cite--vostbank {
   max-width: 850px;
   margin-top: 30px;
@@ -554,6 +570,20 @@
 .finance-article__button-payps .button:hover {
   background-color: #fff;
   color: #44a72c;
+  transition: all 0.8s ease;
+}
+.finance-article__button-bm {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.finance-article__button-bm .button {
+  border-color: #06327b;
+  background-color: #06327b;
+  color: #fff;
+}
+.finance-article__button-bm .button:hover {
+  background-color: #fff;
+  color: #06327b;
   transition: all 0.8s ease;
 }
 .finance-article__button-vostbank {
@@ -918,6 +948,9 @@
 .finance-article__top-img--vostbank {
   background-image: linear-gradient(to bottom, transparent, #336cdd);
 }
+.finance-article__top-img--bm {
+  background-image: linear-gradient(to bottom, transparent, #06327b);
+}
 @media (min-width: 700px) {
   .finance-article__alfa-card {
     display: block;
@@ -973,7 +1006,7 @@
 .finance-wrapper-middle .finance-top__block .finance-card__teaser {
   margin: 10px;
 }
-.finance-wrapper-middle .finance-top__block .finance-card__teaser--copyrights {
+.finance-card__teaser--copyrights {
   margin: 10px;
   font-size: 12px;
 }
@@ -1046,9 +1079,22 @@
   padding-left: 0;
   list-style: none;
 }
+.footer-menu .footer-menu__list a {
+  color: #606060;
+  text-decoration: none;
+}
 .footer-menu .footer-menu__list li {
   display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
   margin-right: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+.footer-menu .footer-menu__list li:hover {
+  background-color: #cacaca;
+  transition: all 0.5s;
 }
 .footer-menu .footer-menu__list li:last-child {
   margin-right: 0;
@@ -1101,6 +1147,9 @@
 }
 .header__hamburger span:last-child {
   margin-bottom: 0;
+}
+.header__title .header__title-source {
+  font-size: 12px;
 }
 .header__logo a {
   display: block;
@@ -1271,6 +1320,9 @@ li {
 .hoverable:hover img {
   transition: all.45s;
   opacity: 0.9;
+}
+.disabled {
+  color: #bbb;
 }
 *,
 *:after,

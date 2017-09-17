@@ -187,6 +187,29 @@
 
 }
 
+.finance-article .finance-article-wrapper .finance-article__cite--bm {
+  max-width: 850px;
+  margin-top: 30px;
+
+  line-height: 32px;
+
+  span {
+
+    font-size: 22px;
+  }
+
+  .finance-article__data-source {
+    font-size: 14px;
+  }
+
+  i {
+    margin-right: 15px;
+    color: #06327b;
+  }
+
+  border-bottom: 2px solid #06327b;
+}
+
 .finance-article .finance-article-wrapper .finance-article__cite--vostbank {
   max-width: 850px;
   margin-top: 30px;
@@ -362,6 +385,25 @@
     &:hover {
       background-color: #fff;
       color: #44a72c;
+
+      transition: all 0.8s ease;
+    }
+  }
+}
+
+.finance-article__button-bm {
+  max-width: 700px;
+  margin: 0 auto;
+
+  .button {
+    border-color: #06327b;
+
+    background-color: #06327b;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #06327b;
 
       transition: all 0.8s ease;
     }
@@ -860,6 +902,10 @@
 
 .finance-article__top-img--vostbank {
   background-image: linear-gradient(to bottom, transparent, #336cdd);
+}
+
+.finance-article__top-img--bm {
+  background-image: linear-gradient(to bottom, transparent, #06327b);
 }
 
 @media (min-width: 700px) {
