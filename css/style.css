@@ -154,8 +154,23 @@
   background-color: #272727;
 }
 .card {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  position: relative;
   margin-bottom: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.card .card-category {
+  position: absolute;
+  padding-top: 2px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #f0f8ff;
+  z-index: 5;
 }
 .card .card-body {
   padding: 10px;
@@ -210,15 +225,15 @@
 .content-wrapper-one {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-align: stretch;
       align-items: stretch;
   padding: 20px;
 }
 .content-wrapper-one .half-block {
   position: relative;
-  width: 49%;
+  width: 45%;
 }
 .content-wrapper-one .half-block .half-block__title {
   position: absolute;
@@ -391,8 +406,7 @@
   color: #020202;
 }
 .finance-article .finance-article-wrapper .finance-article__content-img {
-  margin: 20px 0;
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 .finance-article .finance-article-wrapper .finance-article__content-img img {
   margin: 0 auto;
@@ -418,16 +432,132 @@
   text-align: center;
 }
 .recent-post .single-post {
-  width: 23%;
+  width: 32%;
 }
 .recent-post .previous-post {
-  width: 45%;
+  width: 40%;
 }
 .recent-post .next-post {
-  width: 45%;
+  width: 40%;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--alfa {
+  max-width: 850px;
+  margin-top: 30px;
+  line-height: 32px;
+  border-bottom: 2px solid #ce3030;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--alfa span {
+  font-size: 22px;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--alfa .finance-article__data-source {
+  font-size: 14px;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--alfa i {
+  margin-right: 15px;
+  margin-left: 15px;
+  color: #ce3030;
 }
 .finance-article .finance-article-wrapper .finance-article__cite--tinkoff {
+  max-width: 850px;
+  margin-top: 30px;
+  line-height: 32px;
   border-bottom: 2px solid #ffdd2d;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--tinkoff span {
+  font-size: 22px;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--tinkoff .finance-article__data-source {
+  font-size: 14px;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--tinkoff i {
+  margin-right: 15px;
+  margin-left: 15px;
+  color: #ffdd2d;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--kredito24 {
+  max-width: 850px;
+  margin-top: 30px;
+  line-height: 32px;
+  border-bottom: 2px solid #195491;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--kredito24 span {
+  font-size: 22px;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--kredito24 .finance-article__data-source {
+  font-size: 14px;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--kredito24 i {
+  margin-right: 15px;
+  margin-left: 15px;
+  color: #195491;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--citycredits {
+  max-width: 850px;
+  margin-top: 30px;
+  line-height: 32px;
+  border-bottom: 2px solid #ff3d00;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--citycredits span {
+  font-size: 22px;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--citycredits .finance-article__data-source {
+  font-size: 14px;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--citycredits i {
+  margin-right: 15px;
+  margin-left: 15px;
+  color: #ff3d00;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--bistrodengi {
+  max-width: 850px;
+  margin-top: 30px;
+  line-height: 32px;
+  border-bottom: 2px solid #2987E3;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--bistrodengi span {
+  font-size: 22px;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--bistrodengi .finance-article__data-source {
+  font-size: 14px;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--bistrodengi i {
+  margin-right: 15px;
+  margin-left: 15px;
+  color: #2987E3;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--zaimon {
+  max-width: 850px;
+  margin-top: 30px;
+  line-height: 32px;
+  border-bottom: 2px solid #a8f673;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--zaimon span {
+  font-size: 22px;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--zaimon .finance-article__data-source {
+  font-size: 14px;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--zaimon i {
+  margin-right: 15px;
+  margin-left: 15px;
+  color: #a8f673;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--webbankir {
+  max-width: 850px;
+  margin-top: 30px;
+  line-height: 32px;
+  border-bottom: 2px solid #ffdd35;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--webbankir span {
+  font-size: 22px;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--webbankir .finance-article__data-source {
+  font-size: 14px;
+}
+.finance-article .finance-article-wrapper .finance-article__cite--webbankir i {
+  margin-right: 15px;
+  margin-left: 15px;
+  color: #ffdd35;
 }
 .finance-article .finance-article-wrapper .finance-article__cite--bm {
   max-width: 850px;
@@ -443,6 +573,7 @@
 }
 .finance-article .finance-article-wrapper .finance-article__cite--bm i {
   margin-right: 15px;
+  margin-left: 15px;
   color: #06327b;
 }
 .finance-article .finance-article-wrapper .finance-article__cite--vostbank {
@@ -459,6 +590,7 @@
 }
 .finance-article .finance-article-wrapper .finance-article__cite--vostbank i {
   margin-right: 15px;
+  margin-left: 15px;
   color: #336cdd;
 }
 .finance-article .finance-article-wrapper .finance-article__cite--homecredit {
@@ -491,6 +623,7 @@
 }
 .finance-article .finance-article-wrapper .finance-article__cite--touchbank i {
   margin-right: 15px;
+  margin-left: 15px;
   color: #21479d;
 }
 .finance-article .finance-article-wrapper .finance-article__cite--rencredit {
@@ -507,6 +640,7 @@
 }
 .finance-article .finance-article-wrapper .finance-article__cite--rencredit i {
   margin-right: 15px;
+  margin-left: 15px;
   color: #368b39;
 }
 .finance-article .finance-article-wrapper .finance-article__cite--raiffeisen {
@@ -523,6 +657,7 @@
 }
 .finance-article .finance-article-wrapper .finance-article__cite--raiffeisen i {
   margin-right: 15px;
+  margin-left: 15px;
   color: #fed100;
 }
 .finance-article .finance-article-wrapper .finance-article__cite--jetmoney {
@@ -677,7 +812,7 @@
 .finance-article__button-zaimon .button {
   border-color: #a8f673;
   background-color: #a8f673;
-  color: #fff;
+  color: #333;
 }
 .finance-article__button-zaimon .button:hover {
   background-color: #fff;
@@ -829,7 +964,7 @@
   margin: 0 auto;
 }
 .finance-article__button-alfa .button {
-  border-color: red;
+  border-color: #ce3030;
   background-color: #ce3030;
   color: #fff;
 }
@@ -852,7 +987,61 @@
   color: #333;
   transition: all 0.8s ease;
 }
-.finance-article__title--tinkoff-card {
+.finance-article .finance-article__title-wrap .finance-article__title--raiffeisen {
+  padding: 7px;
+  margin: 0 auto;
+  max-width: 700px;
+  background-color: #fed100;
+  border-radius: 6px;
+}
+.finance-article .finance-article__title-wrap .finance-article__title--rencredit {
+  padding: 7px;
+  margin: 0 auto;
+  max-width: 700px;
+  background-color: #368b39;
+  border-radius: 6px;
+}
+.finance-article .finance-article__title-wrap .finance-article__title--touchbank {
+  padding: 7px;
+  margin: 0 auto;
+  max-width: 700px;
+  color: #fff;
+  background-color: #21479d;
+  border-radius: 6px;
+}
+.finance-article .finance-article__title-wrap .finance-article__title--vostbank {
+  padding: 7px;
+  margin: 0 auto;
+  max-width: 700px;
+  color: #fff;
+  background-color: #336cdd;
+  border-radius: 6px;
+}
+.finance-article .finance-article__title-wrap .finance-article__title--bm {
+  padding: 7px;
+  margin: 0 auto;
+  max-width: 700px;
+  color: #fff;
+  background-color: #06327b;
+  border-radius: 6px;
+}
+.finance-article .finance-article__title-wrap .finance-article__title--homecredit {
+  padding: 7px;
+  margin: 0 auto;
+  max-width: 700px;
+  color: #fff;
+  background-color: #c8102e;
+  border-radius: 6px;
+}
+.finance-article .finance-article__title-wrap .finance-article__title--alfa {
+  padding: 7px;
+  margin: 0 auto;
+  max-width: 700px;
+  color: #fff;
+  background-color: #ce3030;
+  border-radius: 6px;
+}
+.finance-article .finance-article__title-wrap .finance-article__title--tinkoff-card {
   padding: 7px;
   margin: 0 auto;
   max-width: 700px;
@@ -1044,32 +1233,42 @@
 .finance-wrapper-middle .finance-top__block {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: start;
-      align-items: start;
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.finance-wrapper-middle .finance-top__block .finance-card__one {
+.finance-wrapper-middle .finance-card__one {
   width: 30%;
   margin-bottom: 20px;
+  overflow: hidden;
 }
-.finance-wrapper-middle .finance-top__block .finance-card__two {
+.finance-wrapper-middle .finance-card__two {
   width: 30%;
   margin-bottom: 20px;
+  overflow: hidden;
 }
-.finance-wrapper-middle .finance-top__block .finance-card__three {
+.finance-wrapper-middle .finance-card__three {
   width: 30%;
   margin-bottom: 20px;
+  overflow: hidden;
 }
-.finance-wrapper-middle .finance-top__block .finance-card {
+.finance-wrapper-middle .finance-card {
   width: 19%;
+  overflow: hidden;
 }
-.finance-wrapper-middle .finance-top__block .finance-card__title {
+.finance-wrapper-middle img {
+  transition: all 0.4s;
+}
+.finance-wrapper-middle img:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+  transition: all 0.4s;
+}
+.finance-wrapper-middle .finance-card__title {
   margin: 10px;
 }
-.finance-wrapper-middle .finance-top__block .finance-card__teaser {
+.finance-wrapper-middle .finance-card__teaser {
   margin: 10px;
 }
 .finance-card__teaser--copyrights {
@@ -1160,7 +1359,7 @@
   -ms-flex-align: center;
       align-items: center;
   padding: 20px;
-  background-color: #eee;
+  background-color: #ddd;
 }
 .footer-subscribe {
   margin-bottom: 20px;
@@ -1224,7 +1423,6 @@
   right: 0;
   margin: 0 auto;
   background-color: #fff;
-  border-bottom: 1px solid #eee;
   z-index: 10;
 }
 .header__hamburger {
@@ -1258,6 +1456,7 @@
   padding-left: 5px;
   padding-right: 5px;
   margin-right: 10px;
+  font-size: 18px;
   border-radius: 4px;
   box-sizing: border-box;
   transition: all 0.5s;
@@ -1378,7 +1577,7 @@ h6 {
 }
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 p,
@@ -1386,6 +1585,9 @@ ul,
 li {
   line-height: 30px;
   color: #777777;
+}
+video {
+  margin: 0 auto;
 }
 a {
   color: #00a3ec;
@@ -1425,5 +1627,6 @@ li {
   margin: 0;
 }
 .main {
-  margin-top: 61px;
+  margin-top: 70px;
+  background-color: #f2f2f2;
 }
