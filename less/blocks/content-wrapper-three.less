@@ -4,11 +4,13 @@
   justify-content: space-around;
 
   padding: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .half-block-left {
   position: relative;
-  width: 45%;
+  width: 100%;
 
   margin-bottom: 20px;
 
@@ -36,7 +38,7 @@
 
 .half-block-right {
   position: relative;
-  width: 45%;
+  width: 100%;
 
   margin-bottom: 20px;
 
@@ -60,3 +62,26 @@
     bottom: 0;
   }
 }
+
+@media (min-width: 550px) {
+
+  .content-wrapper-three {
+
+    .half-block-left {
+      width: 49%;
+    }
+
+    .half-block-right {
+      width: 49%;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+
+  .content-wrapper-three {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+

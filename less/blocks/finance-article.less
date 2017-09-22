@@ -134,15 +134,18 @@
   }
 
   .single-post {
-    width: 32%;
+    padding: 10px;
+    width: 100%;
   }
 
   .previous-post {
-    width: 40%;
+    padding: 10px;
+    width: 100%;
   }
 
   .next-post {
-    width: 40%;
+    padding: 10px;
+    width: 100%;
   }
 }
 
@@ -1226,6 +1229,24 @@
 
 .finance-article__top-img--bm {
   background-image: linear-gradient(to bottom, transparent, #06327b);
+}
+
+@media (min-width: 630px) {
+
+  .recent-post {
+
+    .single-post {
+      width: 32%;
+    }
+
+    .previous-post {
+      width: 45%;
+    }
+
+    .next-post {
+      width: 45%;
+    }
+  }
 }
 
 @media (min-width: 700px) {

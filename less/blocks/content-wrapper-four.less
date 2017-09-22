@@ -4,10 +4,12 @@
   justify-content: space-between;
 
   padding: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .one-sixth-block {
-  width: 30%;
+  width: 100%;
 
   a {
 
@@ -27,5 +29,38 @@
 
   .one-sixth-block__teaser {
 
+  }
+}
+
+@media (min-width: 550px) {
+
+  .content-wrapper-four {
+
+    .one-sixth-block {
+      width: 49%
+    }
+  }
+}
+
+@media (min-width: 850px) {
+
+  .content-wrapper-four {
+
+    .one-sixth-block {
+      width: 32%
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+
+  .content-wrapper-four {
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .one-sixth-block {
+      width: 30%
+    }
   }
 }

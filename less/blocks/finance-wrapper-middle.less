@@ -3,7 +3,7 @@
 
   .finance-top__title {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .finance-top__more {
@@ -17,28 +17,32 @@
   }
 
   .finance-card__one {
-    width: 30%;
+    width: 100%;
     margin-bottom: 20px;
 
     overflow: hidden;
+
+    .finance-card__title {
+      margin: 7px;
+    }
   }
 
   .finance-card__two {
-    width: 30%;
+    width: 100%;
     margin-bottom: 20px;
 
     overflow: hidden;
   }
 
   .finance-card__three {
-    width: 30%;
+    width: 100%;
     margin-bottom: 20px;
 
     overflow: hidden;
   }
 
   .finance-card {
-    width: 19%;
+    width: 100%;
 
     overflow: hidden;
   }
@@ -70,4 +74,67 @@
 .finance-card__teaser--copyrights {
   margin: 10px;
   font-size: 12px;
+}
+
+@media (min-width: 650px) {
+
+  .finance-wrapper-middle {
+
+    .finance-top__title {
+      font-size: 24px;
+    }
+
+    .finance-top__block {
+      padding: 10px;
+
+      .finance-card__one {
+        width: 32%;
+
+        .finance-card__title {
+          margin: 10px;
+        }
+      }
+
+      .finance-card__two {
+        width: 32%;
+      }
+
+      .finance-card__three {
+        width: 32%;
+      }
+
+      .finance-card {
+        width: 32%;
+      }
+
+      .finance-card:nth-child(4) {
+        width: 49%;
+      }
+
+      .finance-card:nth-child(5) {
+        width: 49%;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+
+  .finance-wrapper-middle {
+
+    .finance-top__block {
+
+      .finance-card {
+        width: 19%;
+      }
+
+      .finance-card:nth-child(4) {
+        width: 19%;
+      }
+
+      .finance-card:nth-child(5) {
+        width: 19%;
+      }
+    }
+  }
 }
